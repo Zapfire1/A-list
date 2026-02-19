@@ -1,0 +1,8 @@
+body {
+    background-image: url("nettsidebakgrunn.png"); 
+    background-size: cover;       /* Dekker hele skjermen */
+    background-position: center;  /* Sentrerer bildet */
+    background-repeat: no-repeat; /* Hindrer gjentakelse */
+    background-attachment: fixed; /* Gir parallax-effekt */
+    min-height: 100vh;
+}
