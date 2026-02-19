@@ -6,3 +6,12 @@ body {
     background-attachment: fixed; /* Gir parallax-effekt */
     min-height: 100vh;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    color: white;
+}
