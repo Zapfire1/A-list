@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="module" src="register.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+    <form id="register-skjema">
+
+        <label for="email">Email:</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="Email Address" 
+            required
+        >
+
+        <label for="password">Password:</label>
+        <input 
+            type="password" 
+            id="password" 
+            name="password"
+            placeholder="Password" 
+            required
+        >
+
+        <!-- Kun én submit-knapp -->
+        <button type="submit" id="submitbutton">Create Account</button>
+
+        <div class="social">
+            <div class="go" id="google">
+                <i class="fab fa-google"></i> Google
+            </div>
+            <div class="fb" id="facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </div>
+        </div>
+
+        <div class="form">
+            <p>
+                Already have an account?
+               <button id="login-button">Login Here</button>
+            </p>
+        </div>
+
+    </form> 
+</body>
+</html>

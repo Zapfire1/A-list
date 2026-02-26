@@ -11,7 +11,6 @@ body {
     background-repeat: no-repeat; /* Hindrer gjentakelse */
     background-attachment: fixed; /* Gir parallax-effekt */
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* NAVBAR STYLING */
@@ -166,4 +165,127 @@ main {
     justify-content: center;
     height: 55vh;
     color: white;
+}
+/* ===== FORM CONTAINER ===== */
+#register-skjema {
+    background: rgba(15, 23, 42, 0.85);
+    padding: 40px;
+    width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+/* Labels */
+#register-skjema label {
+    color: #e2e8f0;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+#register-skjema input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+#register-skjema input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+#register-skjema input:focus {
+    outline: none;
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px rgba(0,212,255,0.5);
+}
+
+/* Buttons */
+#register-skjema button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Login button */
+#register-skjema button[type="submit"] {
+    background: linear-gradient(135deg, #00d4ff, #0099ff);
+    color: white;
+}
+
+#register-skjema button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* Create account button */
+#submit {
+    background: transparent;
+    border: 2px solid #00d4ff;
+    color: #00d4ff;
+}
+
+#submit:hover {
+    background: #00d4ff;
+    color: white;
+}
+
+/* Social buttons */
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social div {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.go {
+    background: #db4437;
+    color: white;
+}
+
+.fb {
+    background: #3b5998;
+    color: white;
+}
+
+.social div:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Bottom text */
+.form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form a:hover {
+    text-decoration: underline;
 }
